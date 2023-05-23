@@ -27,12 +27,12 @@ class DepositCardTest {
     @BeforeEach
     void setUp() throws InterruptedException {
         ChromeOptions options = new ChromeOptions();
-        // options.addArguments("--disable-dev-shm-usage");
-        // options.addArguments("--no-sandbox");
-        // options.addArguments("--headless");
+        options.addArguments("--disable-dev-shm-usage");
+        options.addArguments("--no-sandbox");
+        options.addArguments("--headless");
         driver = new ChromeDriver(options);
-        driver.get("http://localhost:9999");
-        Thread.sleep(10000);
+        driver.get("http://localhost:7777");
+        //Thread.sleep(10000);
 
     }
 
