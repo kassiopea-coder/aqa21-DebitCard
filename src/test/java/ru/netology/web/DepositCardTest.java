@@ -21,11 +21,12 @@ class DepositCardTest {
 
     @BeforeAll
     static void setUpAll() {
+
         WebDriverManager.chromedriver().setup();
     }
 
     @BeforeEach
-    void setUp() throws InterruptedException {
+    void setUp() {
         ChromeOptions options = new ChromeOptions();
         options.addArguments("--disable-dev-shm-usage");
         options.addArguments("--no-sandbox");
